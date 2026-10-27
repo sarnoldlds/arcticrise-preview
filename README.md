@@ -92,6 +92,12 @@ To add another project:
 
 Keep budgets and other internal details off public project pages.
 
+### Visitor statistics
+
+The site uses **Cloudflare Web Analytics** (free and cookie-free) to count visits, countries, referrers and popular pages. View the statistics by logging in to Cloudflare → **Web Analytics** → arcticrise.org.
+
+The tracking code is at the end of `js/main.js` and only runs when the page is served from arcticrise.org, so the preview copy on github.io isn't counted. To switch analytics off, delete that block, and the "cookie-free analytics" sentence in each page's footer.
+
 ---
 
 ## 3. Changing colours, fonts and spacing
@@ -188,6 +194,8 @@ The site is just files, so any static host works. Upload the **whole folder** ke
 5. Open the **Actions** tab: a "pages build and deployment" run appears. When it shows a green tick (usually 1–2 minutes), the site is live at `https://<username>.github.io/<repository>/`.
 
 **Updating the site later:** edit a file directly on GitHub (pencil icon) or upload a replacement with **Add file → Upload files**, then click **Commit changes** each time. The site republishes automatically within a minute or two.
+
+**If a change to `css/styles.css` or `js/main.js` doesn't show up:** browsers keep old copies of these files. In both `index.html` and `namas.html`, raise the number after `?v=` where they are linked near the top and bottom of the file (e.g. `css/styles.css?v=2` → `?v=3`), so every visitor's browser fetches the new version.
 
 ### Custom domain (arcticrise.org)
 
