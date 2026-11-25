@@ -736,6 +736,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .project-card p { color: var(--muted); }
 .project-card .facts { margin: 0; }
 .project-card .button { margin-top: 1.5rem; }
+.project-card + .project-card { margin-top: 1.5rem; }
+
+/* Component cards (project pages) */
+.components { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.25rem; margin-top: clamp(2rem, 4vw, 3rem); }
+.components li { padding: 1.4rem 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+.components h3 { margin: 0 0 0.5rem; font-family: var(--font-serif); font-weight: 400; font-size: 1.3rem; color: var(--navy-900); }
+.components p { margin: 0; font-size: 0.95rem; color: var(--muted); }
 
 /* Project pages */
 .hero--page { --hero-h: max(520px, min(70svh, 680px)); }

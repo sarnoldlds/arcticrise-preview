@@ -7,6 +7,7 @@ Plain HTML, CSS and a little JavaScript — no build step, no frameworks, no ext
 (repository root)
 ├── index.html              All page content (text, sections, hero illustration)
 ├── namas.html              Project page for NAMAS (linked from the Projects section)
+├── avatar.html             Project page for AVATAR (linked from the Projects section)
 ├── css/styles.css          All styling (colours, fonts, layout, responsive rules)
 ├── js/main.js              Mobile menu, header on scroll, active nav link, contact email
 ├── assets/
@@ -82,7 +83,7 @@ The current address, **contact@arcticrise.org**, is an email-forwarding alias se
 
 ### Project pages
 
-Each funded project has its own page (currently `namas.html`, at https://www.arcticrise.org/namas.html), linked from a card in the **Projects** section of `index.html` (`id="projects"`).
+Each project has its own page (currently `namas.html` and `avatar.html`, e.g. https://www.arcticrise.org/namas.html), linked from a card in the **Projects** section of `index.html` (`id="projects"`).
 
 To add another project:
 
@@ -195,7 +196,7 @@ The site is just files, so any static host works. Upload the **whole folder** ke
 
 **Updating the site later:** edit a file directly on GitHub (pencil icon) or upload a replacement with **Add file → Upload files**, then click **Commit changes** each time. The site republishes automatically within a minute or two.
 
-**If a change to `css/styles.css` or `js/main.js` doesn't show up:** browsers keep old copies of these files. In both `index.html` and `namas.html`, raise the number after `?v=` where they are linked near the top and bottom of the file (e.g. `css/styles.css?v=2` → `?v=3`), so every visitor's browser fetches the new version.
+**If a change to `css/styles.css` or `js/main.js` doesn't show up:** browsers keep old copies of these files. In `index.html` and every project page (`namas.html`, `avatar.html`), raise the number after `?v=` where they are linked near the top and bottom of the file (e.g. `css/styles.css?v=3` → `?v=4`), so every visitor's browser fetches the new version.
 
 ### Custom domain (arcticrise.org)
 
